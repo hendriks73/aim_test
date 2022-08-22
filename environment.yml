@@ -1,0 +1,10 @@
+name: aim_test
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - pip=20.2
+    - python=3.8.8
+    - pip:
+        - aim==3.10.1
+
