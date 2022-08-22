@@ -3,7 +3,7 @@ channels:
     - conda-forge
     - defaults
 dependencies:
-    - pip=20.2.4
+    - pip=19
     - python=3.8.8
     - pip:
         - aim==3.11.1
