@@ -18,12 +18,6 @@ jobs:
       - name: Checkout github repo
         uses: actions/checkout@v2
 
-      - name: Cache conda
-        uses: actions/cache@v2
-        with:
-          path: ~/conda_pkgs_dir
-          key: conda-${{ hashFiles('environment.yml') }}
-
       - name: Setup Miniconda
         uses: conda-incubator/setup-miniconda@v2
         with:
@@ -31,8 +25,3 @@ jobs:
           environment-file: environment.yml
           auto-update-conda: true
           auto-activate-base: false
-
-      - name: Conda list
-        run: conda list
-
-
