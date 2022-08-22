@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  pytest:
+  create_env:
 
     runs-on: 'ubuntu-20.04'
 
