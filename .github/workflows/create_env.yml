@@ -8,10 +8,7 @@ jobs:
 
   pytest:
 
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ 'ubuntu-20.04' ]
+    runs-on: 'ubuntu-20.04'
 
     defaults:
       run:
@@ -30,7 +27,7 @@ jobs:
       - name: Setup Miniconda
         uses: conda-incubator/setup-miniconda@v2
         with:
-          activate-environment: tag
+          activate-environment: aim_test
           environment-file: environment.yml
           auto-update-conda: true
           auto-activate-base: false
