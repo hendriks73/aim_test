@@ -4,7 +4,7 @@ channels:
     - defaults
 dependencies:
     - pip=20.2.4
-    - python=3.10
+    - python=3.9
     - pip:
         - aim==3.11.1
 
